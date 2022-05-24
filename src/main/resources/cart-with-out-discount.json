@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "apple",
+    "priceEach": 10,
+    "qty": 4
+  },
+  {
+    "id": 2,
+    "name": "orange",
+    "priceEach": 20,
+    "qty": 5
+  },
+  {
+    "id": 3,
+    "name": "avacado",
+    "priceEach": 30,
+    "qty": 7
+  }
+]
