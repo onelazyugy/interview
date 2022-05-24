@@ -27,31 +27,19 @@
 }
 ```
 - GET http://localhost:8080/api/v1/apply-discount
-- User's current cart without promotion
-```javascript
-[]
-```
+- to be implemented by candidate
+
 
 # PROMOTION RULES
-## regular price
-- buy 4 or less apples, price will be 10 unit each
-- buy 5 or less orange, price will be 20 unit each
-## promo price
-- buy 8 or more apples, price will be 5 unit each
-- buy 10 or more orange, price will be 10 unit each
-```javascript
-[
-     {
-         "id": 1,
-         "name": "apple",
-         "priceEach": 5,
-         "qty": 8
-     },
-     {
-         "id": 2,
-         "name": "orange",
-         "priceEach": 10,
-         "qty": 10
-     }
- ]
-```
+ * Promotion price
+ * Buy 8 or more apples, you get half price
+ * Buy 10 or more oranges, you get half price
+ * Ex: if you buy 8 or more apples, each will cost 5 unit
+ * Ex: if you buy 10 or more oranges, each will cost 10 unit
+ 
+ * Regular price
+ * Ex: if you buy 4 or less apples, each will cost 10 units
+ * Ex: if you buy 5 or less oranges, each will cost 20 units
+
+ * basically you get 50% off if you buy double or greater
+ 
