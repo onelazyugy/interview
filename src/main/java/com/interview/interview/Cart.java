@@ -9,5 +9,5 @@ import java.util.List;
 @Builder
 public class Cart {
     private List<Item> items;
-    private int total;
+    private double total;
 }

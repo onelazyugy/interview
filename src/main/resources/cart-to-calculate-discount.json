@@ -2,18 +2,18 @@
   {
     "id": 1,
     "name": "apple",
-    "priceEach": 5,
+    "priceEach": 10,
     "qty": 11
   },
   {
     "id": 2,
     "name": "orange",
-    "priceEach": 10,
+    "priceEach": 20,
     "qty": 20
   },
   {
     "id": 3,
-    "name": "avacado",
+    "name": "avocado",
     "priceEach": 30,
     "qty": 7
   }

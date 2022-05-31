@@ -19,8 +19,8 @@ public class CartService {
         return Cart.builder().items(items).total(calculateTotal(items)).build();
     }
 
-    public int calculateTotal(List<Item> items) {
-        return items.stream().mapToInt(i -> (i.getPriceEach()*i.getQty())).sum();
+    public double calculateTotal(List<Item> items) {
+        return items.stream().mapToDouble(i -> (i.getPriceEach()*i.getQty())).sum();
     }
 
     public String cartWithOutDiscount() throws Exception {
@@ -29,7 +29,7 @@ public class CartService {
     }
 
     public String cartWithDiscount() throws Exception {
-        File resource = new ClassPathResource("cart-with-discount.json").getFile();
+        File resource = new ClassPathResource("cart-to-calculate-discount.json").getFile();
         return new String(Files.readAllBytes(resource.toPath()));
     }
 }
